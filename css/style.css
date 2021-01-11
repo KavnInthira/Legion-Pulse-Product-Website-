@@ -2,7 +2,7 @@
 
 :root{
     --primary-color: #cf766c;
-    --secondary-color: rgb(241, 241, 241);
+    --secondary-color: #cf766c;
     --dark-color:rgb(39, 39, 39);
     --light-color: #f4f4f4;
     --success-color: #5cb85c;
@@ -79,6 +79,34 @@ img {
     padding-left: 10px;
 }
 /* Showcase */
+
+.showcase h1 {
+    color: var(--dark-color);
+}
+
+.showcase p {
+    margin: 20px 0;
+    color: var(--dark-color);
+}
+
+.slogan {
+    font-size: 11px;
+    line-height: 5%;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.showcase {
+    height: 400px;
+    background-color: var(--light-color);
+}
+
+.showcase .grid {
+    overflow: visible;
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+}
+
 
 /* Footer */
 
