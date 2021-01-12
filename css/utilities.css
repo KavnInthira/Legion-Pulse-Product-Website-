@@ -2,7 +2,7 @@
     max-width: 1100px;
     margin: 0 auto;
     overflow: auto;
-    padding: 0 40px;
+    padding: 0 50px;
 }
 
 .card {
@@ -11,7 +11,7 @@
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
     padding: 20px;
-    margin: 10px;
+    margin: 5px;
 }
 
 .btn {
@@ -30,7 +30,9 @@
 }
 
 .btn:hover {
-    transform: scale(0.98)
+    transform: scale(0.98);
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
 /* Backgrounds & colored buttons */
@@ -108,7 +110,7 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     height: 100%;
