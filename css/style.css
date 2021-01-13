@@ -1,189 +1,286 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap");
 
-:root{
-    --primary-color: #cf766c;
-    --secondary-color: #cf766c;
-    --dark-color:#333;
-    --secondary-dark: rgb(66, 66, 66);
-    --light-color: #f4f4f4;
-    --success-color: #5cb85c;
-    --error-color: #d9534f;
-
+:root {
+  --primary-color: #cf766c;
+  --secondary-color: #cf766c;
+  --dark-color: #333;
+  --secondary-dark: rgb(66, 66, 66);
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body { 
-    font-family: "Lato", sans-serif;
-    color: var(--primary-color);
-    line-height: 1.3;
+body {
+  font-family: "Lato", sans-serif;
+  color: var(--primary-color);
+  line-height: 1.3;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
- 
+
 a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 h1,
 h2 {
-    font-weight:600;
-    line-height: 1.2;
-    margin: 10px 0;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 10px 0;
 }
 
-
 p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 /* Navigation Bar */
 .navbar {
-    background-color: var(--dark-color);
+  background-color: var(--dark-color);
 }
 .logo span {
-    color: #fff;
-    padding-left: 5px;
+  color: #fff;
+  padding-left: 5px;
 }
 
 .navbar ul {
-    display: flex;
-    line-height: 1.6;
+  display: flex;
+  line-height: 1.6;
 }
 
 .navbar a {
-    color: #fff;
-    padding: 10px;
-    margin: 0 5px;
-    font-weight: 500;
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+  font-weight: 500;
 }
 
-.navbar a:hover{
-    border-bottom: 2px var(--primary-color) solid;
+.navbar a:hover {
+  border-bottom: 2px var(--primary-color) solid;
 }
 
 .navbar .flex {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 .navbar i {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 /* Showcase */
 
 .showcase h1 {
-    color: var(--dark-color);
+  color: var(--dark-color);
 }
 
 .showcase p {
-    margin: 20px 0;
-    color: var(--dark-color);
+  margin: 20px 0;
+  color: var(--dark-color);
 }
 
 .slogan {
-    font-size: 11px;
-    line-height: 5%;
-    padding-bottom: 15px;
-    font-weight: bold;
+  font-size: 11px;
+  line-height: 5%;
+  padding-bottom: 15px;
+  font-weight: bold;
 }
 
 .showcase {
-    height: 400px;
-    background-color: var(--light-color);
-    
+  height: 400px;
+  background-color: var(--light-color);
 }
 
 .showcase .grid {
-    overflow: visible;
-    grid-template-columns: 55% 45%;
-    gap: 30px;
+  overflow: visible;
+  grid-template-columns: 55% 45%;
+  gap: 30px;
 }
 
-
 .legion img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 /* Stats */
 .stats {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .stats p {
-    color: #fff;
+  color: #fff;
 }
 
 .stats h1,
 h2 {
-    color: var(--dark-color);
-    padding-left: 15px;
-    text-align: left;
-    font-size: 40px;
-    padding-top: 40px;
-    
+  color: var(--dark-color);
+  padding-left: 15px;
+  text-align: left;
+  font-size: 40px;
+  padding-top: 40px;
 }
 
 .stats .grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
-.stats .grid >*:first-child {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 2;
+.stats .grid > *:first-child {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
 }
-.stats .grid >*:nth-child(2) {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 3;
+.stats .grid > *:nth-child(2) {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 3;
 }
-.stats .grid >*:nth-child(3) {
-    grid-column: 2 / span 2;
-    grid-row: 1 / span 2;
+.stats .grid > *:nth-child(3) {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 2;
 }
-.stats .grid >*:nth-child(4) {
-    grid-column: 2 / span 2;
-    grid-row: 2 / span 2;
+.stats .grid > *:nth-child(4) {
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 2;
 }
-.stats .grid >*:nth-child(5) {
-    grid-column: 2 / span 2;
-    grid-row: 3 / span 2;
+.stats .grid > *:nth-child(5) {
+  grid-column: 2 / span 2;
+  grid-row: 3 / span 2;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Footer */
 
 .footer .social a {
-    color: var(--primary-color);
-    margin: 0 10px;
+  color: var(--primary-color);
+  margin: 0 10px;
+}
+
+/* Sponsors */
+
+.sponsor .card {
+  text-align: center;
+  margin: 30px 10px 30px;
+  transition: transform 0.2s ease-in;
+  background-color: #fff;;
+  
 }
 
 
 
+.sponsor h1 {
+  padding-left: 20px;
+}
+
+
+
+.sponsor .card:hover {
+  transform: translateY(-15px);
+}
+
+/*Animations */
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Tablets and under*/
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .stats .grid,
+  .cli .grid, {
+    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .showcase {
+    height: auto;
+  }
+
+  .showcase-text {
+    text-align: center;
+    margin-top: 40px;
+    animation: slideInFromTop 1s ease-in;
+  }
+
+  .showcase-form {
+    justify-self: center;
+    margin: auto;
+  }
+
+  .stats .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .features-head,
+  .features-sub-head,
+  .docs-head {
+    text-align: center;
+  }
+
+  .features-head img,
+  .features-sub-head img,
+  .docs-head img {
+    justify-self: center;
+  }
+
+  .features-main .grid > *:first-child,
+  .features-main .grid > *:nth-child(2) {
+    grid-column: 1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+/*Build a Responsive Website time: https://www.youtube.com/watch?v=p0bGHP-PXD4&t=3772s */
 
 
