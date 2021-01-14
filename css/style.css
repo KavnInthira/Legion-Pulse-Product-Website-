@@ -167,120 +167,69 @@ h2 {
   text-align: center;
   margin: 30px 10px 30px;
   transition: transform 0.2s ease-in;
-  background-color: #fff;;
-  
+  background-color: #fff;
 }
-
-
 
 .sponsor h1 {
   padding-left: 20px;
 }
 
-
-
 .sponsor .card:hover {
   transform: translateY(-15px);
 }
 
-/*Animations */
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes slideInFromTop {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes slideInFromBottom {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+.showcase-nutrition {
+  background-color: var(--light-color);
+  margin: 30px;
 }
 
-/* Tablets and under*/
-@media (max-width: 768px) {
-  .grid,
-  .showcase .grid,
-  .stats .grid,
-  .cli .grid, {
-    grid-template-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-
-  .showcase {
-    height: auto;
-  }
-
-  .showcase-text {
-    text-align: center;
-    margin-top: 40px;
-    animation: slideInFromTop 1s ease-in;
-  }
-
-  .showcase-form {
-    justify-self: center;
-    margin: auto;
-  }
-
-  .stats .grid > *:first-child {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .features-head,
-  .features-sub-head,
-  .docs-head {
-    text-align: center;
-  }
-
-  .features-head img,
-  .features-sub-head img,
-  .docs-head img {
-    justify-self: center;
-  }
-
-  .features-main .grid > *:first-child,
-  .features-main .grid > *:nth-child(2) {
-    grid-column: 1;
-  }
+.showcase-nutrition .grid {
+  overflow: visible;
+  grid-template-columns: 55% 45%;
 }
 
-/* Mobile */
-@media (max-width: 500px) {
-  .navbar {
-    height: 110px;
-  }
-
-  .navbar .flex {
-    flex-direction: column;
-  }
-
-  .navbar ul {
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.1);
-  }
+.showcase-nutrition .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
-/*Build a Responsive Website time: https://www.youtube.com/watch?v=p0bGHP-PXD4&t=3772s */
+
+.showcase-nutrition .grid > *:first-child {
+  grid-column: 1 / span 5;
+  grid-row: 1 / span 1;
+}
+
+.showcase-nutrition .grid > *:nth-child(2) {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.showcase-nutrition .grid > *:nth-child(3) {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 2;
+}
+
+.showcase-nutrition .grid > *:nth-child(4) {
+  grid-column: 1 / span 1;
+  grid-row: 3/ span 1;
+}
+
+.showcase-nutrition .grid > *:nth-child(5) {
+  grid-column: 2 / span 2;
+  grid-row: 2/ span 4;
+}
+
+.showcase-nutrition h1 {
+  color:#333;
+}
+.showcase-nutrition h2 {
+  font-size: 35px;
+}
+
+.showcase-nutrition .card {
+  background-color: #fff;
+}
+
+
+
 
 
